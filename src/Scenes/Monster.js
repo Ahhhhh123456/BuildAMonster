@@ -107,7 +107,7 @@ class Monster extends Phaser.Scene {
 
     update() {
         let my = this.my;    // create an alias to this.my for readability
-        
+
         if (Phaser.Input.Keyboard.JustDown(sKey))
         {
             //console.log("S is pressed.");
@@ -127,7 +127,7 @@ class Monster extends Phaser.Scene {
             //console.log("A is pressed.");
             for(let i in my.sprite)
             {
-                console.log(i);
+                //console.log(i);
                 my.sprite[i].x -= 10;
             }
         }
@@ -136,7 +136,7 @@ class Monster extends Phaser.Scene {
             //console.log("D is pressed.");
             for(let i in my.sprite)
             {
-                console.log(i);
+                //console.log(i);
                 my.sprite[i].x += 10;
             }
         }
